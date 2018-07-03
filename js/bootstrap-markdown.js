@@ -122,9 +122,9 @@
 
             // Construct the button object
             buttonContainer = $('<button></button>');
-            buttonContainer.text(' ' + this.__localize(btnText)).addClass('btn-default btn-sm').addClass(btnClass);
+            buttonContainer.text(' ' + this.__localize(btnText)).addClass('btn-outline-secondary btn-sm').addClass(btnClass);
             if (btnClass.match(/btn\-(primary|success|info|warning|danger|link)/)) {
-              buttonContainer.removeClass('btn-default');
+              buttonContainer.removeClass('btn-outline-secondary');
             }
             buttonContainer.attr({
               'type': 'button',
